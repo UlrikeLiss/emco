@@ -26,7 +26,7 @@ constructor(creator, owner, status, flag) {
   }
 }
 
-var status = class {                        // Class 2: "status"
+var Status = class {                        // Class 2: "status"
   constructor(done, inProgress, archive) {
     this.inProgress = done
     this.inProgress = inProgress
@@ -41,9 +41,9 @@ constructor(name, role) {
   this.role = role
                                                                                                     this.statussetter = []
   }
-  changestatus(email) {                   // Methods
+  changeStatus(email) {                   // Methods
     this.email = email
-    email.statussetter = this.name
+    email.statusSetter = this.name
   }
    opentask(task) {                        // Methods
     this.task = task
@@ -51,7 +51,7 @@ constructor(name, role) {
   }
 }
  
- var flag = class {                        // Class 4: "flag"
+ var Flag = class {                        // Class 4: "flag"
   constructor(red, green, yellow, blue) {
     this.red = red
     this.green = green
